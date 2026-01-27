@@ -1,0 +1,3 @@
+[00:00:04.611] Server  LOG     ✓ Ready in 3.2s
+[00:00:18.529] Server  ERROR   ⨯ ReferenceError: window is not defined
+[00:00:22.596] Browser ERROR   Failed to load map locations: {}
