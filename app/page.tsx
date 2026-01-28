@@ -6,9 +6,7 @@ import Clubs from '@/components/Clubs';
 import MapSection from '@/components/MapSection';
 import Footer from '@/components/Footer';
 import NetworkPreview from '@/components/NetworkPreview';
-import dynamic from 'next/dynamic';
-
-const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), { ssr: false });
+import InteractiveMap from '@/components/InteractiveMap';
 import { getClubs } from '@/lib/google-sheets';
 
 // Revalidate data every hour
