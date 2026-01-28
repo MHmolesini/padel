@@ -16,6 +16,7 @@ export async function getClubs(): Promise<Club[]> {
     try {
         // Support environment variables for Vercel/Production
         if (process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
+            console.log('DEBUG: Private Key loaded with length:', process.env.GOOGLE_PRIVATE_KEY.length);
             const auth = new google.auth.GoogleAuth({
                 credentials: {
                     client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
