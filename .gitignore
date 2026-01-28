@@ -1,1 +1,11 @@
 node_modules
+.next/
+out/
+build/
+dist/
+.env
+.env.local
+.DS_Store
+*.log
+servide_account.json
+service_account.json
